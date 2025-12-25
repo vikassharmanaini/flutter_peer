@@ -55,6 +55,24 @@ peer.on('connection', null, (ev, conn) {
 });
 ```
 
+## 🌐 Signaling Server
+
+For production apps or heavy usage, it is **strongly recommended** to host your own signaling server. The default PeerJS cloud server (0.peerjs.com) is great for testing but may have usage limits or latency variations.
+
+### Setting up your own PeerServer
+
+You can easily run your own server using the [official PeerServer](https://github.com/peers/peerjs-server) (Node.js).
+
+#### 1. Install via NPM
+```bash
+npm install peer -g
+```
+
+#### 2. Run the server
+```bash
+peerjs --port 9000 --key peerjs --path /myapp
+```
+
 ## ⚙️ Configuration
 
 You can configure the signaling server, port, and key:

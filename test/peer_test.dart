@@ -3,7 +3,6 @@ import 'package:mocktail/mocktail.dart';
 import 'package:flutter_peer/signaling/signaling_client.dart';
 import 'package:flutter_peer/signaling/signaling_protocol.dart';
 import 'package:flutter_peer/peer.dart';
-import 'package:eventify/eventify.dart';
 
 class MockSignalingClient extends Mock implements SignalingClient {}
 
