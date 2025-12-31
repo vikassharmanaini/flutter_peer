@@ -258,8 +258,8 @@ class WebPeerConnection implements PeerConnection {
   Stream<IceCandidate> get onIceCandidate => _iceCandidateController.stream;
 
   @override
-  Stream<DataChannel> get onDataChannel =>
-      _trackController.stream.cast<DataChannel>(); // FIXED: This was wrong in mobile too, should be the dc controller
+  Stream<DataChannel> get onDataChannel => _trackController.stream.cast<
+      DataChannel>(); // FIXED: This was wrong in mobile too, should be the dc controller
 
   @override
   Stream<MediaStream> get onTrack => _trackController.stream;
